@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/jquery.js" rel="script"></script>
+    <script src="js/bootstrap.min.js" rel="script"></script>
+    <link rel="icon" type="image/gif" href="images/icons/login.png">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Kiraana Bazaar</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item p-1">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link" href="product.html">Shop</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item p-1">
+                            <a class="nav-link" href="sign_up.html">Signup</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <!--Main Body content-->
+    <main>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-3 col-md-2"></div>
+                <div class="col-lg-5 col-md-7 col-12">
+                    <form class="text-center border p-5 bg-light" method="post" action="">
+                        <h4 class="mb-4">Sign in</h4>
+                        <input type="email" name="loginEmail" placeholder="E-mail" class="form-control mb-4" required>
+                        <input type="password" name="loginPass" placeholder="Password" class="form-control mb-4" required>
+                        <div class="d-flex justify-content-around mb-5">
+                            <div class="mt-2">
+                                <input type="checkbox" name="rememberMe" value="remember" id="rememberMe">
+                                <label for="rememberMe">Remember Me</label>
+                            </div>
+                            <div>
+                                <a class="nav-link" href="sign_up.html">Forgot Password?</a>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-success btn-hover justify-content-center" style="width: 50%">Login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--footer content-->
+    <footer class="mt-5 mb-5">
+        <div class="container bg-light">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12 text-center mt-4">
+                    <h5 style="color: forestgreen">Big Basket</h5>
+                    <small>
+                        <a href="about.html" class="foot-link">About Us</a><br>
+                        <a href="404.html" target="_blank" class="foot-link">In News</a><br>
+                        <a href="404.html" target="_blank" class="foot-link">Privacy Policy</a><br>
+                        <a href="404.html" target="_blank" class="foot-link">Terms and Conditions</a><br>
+                        <a href="404.html" target="_blank" class="foot-link">Careers</a><br>
+                    </small>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 text-center mt-4">
+                    <h5 style="color: forestgreen">Help</h5>
+                    <small>
+                        <a href="404.html" target="_blank" class="foot-link">FAQs</a><br>
+                        <a href="contact.html" class="foot-link">Contact Us</a><br>
+                        <a href="404.html" target="_blank" class="foot-link">Vendor Contact</a><br>
+                    </small>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 text-center mt-4">
+                    <h5 style="color: forestgreen">Download Our App</h5>
+                    <a href="https://google.com" target="_blank">
+                        <img src="images/Google-App-store-icon.png" height="40px" width="120px">
+                    </a>
+                    <a href="https://apple.com" target="_blank">
+                        <img src="images/Apple-App-store-icon.png" height="40px" width="120px">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 text-center mt-4">
+                    <h5 style="color: forestgreen">Follow Us On</h5>
+                    <a href="https://facebook.com" class="px-2"><i class="fa fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" class="px-2"><i class="fa fa-twitter"></i></a>
+                    <a href="https://instagram.com" class="px-2"><i class="fa fa-instagram"></i></a>
+                    <a href="https://linkedin.com" class="px-2"><i class="fa fa-linkedin-in"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

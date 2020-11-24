@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Recursive', sans-serif;
+    background-color: #efefef;
+}
+
+.fontAwesome {
+    font-family: 'Helvetica', FontAwesome, sans-serif;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.btn-hover:hover{
+    background-color: #1e7e34;
+    color: white;
+}
+
+.image:hover{
+    width: 100%;
+    height: 110%;
+}
+
+.foot-link{
+    text-decoration: none;
+    color: gray;
+}
+
+.foot-link:hover{
+    color: forestgreen;
+}
+.btn-grad-orange {
+    background: linear-gradient(to bottom right, #0ff000, #0000ff);
+    text-shadow: 1px black;
+}
+

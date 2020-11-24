@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/jquery.js" rel="script"></script>
+    <script src="js/bootstrap.min.js" rel="script"></script>
+    <link rel="icon" type="image/gif" href="images/icons/shop.png">
+    <title>Products</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand mr-2" href="index.html"><img src="images/icons/shop.png" alt="Logo" width="100px" height="100px"> </a>
+                <div class="row">
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse flex-column ml-lg-0 ml-3">
+
+                        <ul class="navbar-nav ml-auto" style="margin-right: 30px">
+                            <li class="nav-item">
+                                <a class="nav-link small" href="tel:9507605321"><i class="fa fa-phone">&nbsp;&nbsp;</i>+91-9507605321</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link small" href="https://www.google.com/maps/place/Chandwa+More,+pakari,+Arrah,+Bihar+802301/@25.5595187,84.6422956,17z/data=!4m5!3m4!1s0x398d5f817a3f9717:0xe9c36ee070388597!8m2!3d25.5598672!4d84.644892">
+                                    <i class="fa fa-map-marker">&nbsp;&nbsp;</i>Chandwa More, Arrah-802301, Bihar, India</a>
+                            </li>
+                            <li class="nav-item small">
+                                <a class="nav-link" href="login.html"><i class="fa fa-user">&nbsp;&nbsp;</i>Login</a>
+                            </li>
+                            <li class="nav-item small">
+                                <a class="nav-link">|</a>
+                            </li>
+                            <li class="nav-item small">
+                                <a class="nav-link" href="sign_up.html">Sign up</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item ml-lg-3">
+                                <form action="" method="post">
+                                    <input class="fontAwesome p-1 my-1" type="text" name="searchItem" placeholder="&#xf002; Search for Products..." size="65"><button class="btn btn-success"><i class="fa fa-search"></i></button>
+                                </form>
+                            </li>
+                            <li class="nav-item" style="margin-left: 150px">
+                                <a href="cart.html"><img src="images/icons/shopping-cart.png" alt="cart" width="50px" height="50px" ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                            <span class="dropdown">
+                                <button class="btn btn-success btn-block dropdown-toggle" type="button" id="#shopCategory" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    SHOP BY CATEGORY
+                                </button>
+                                <span class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item border-bottom" href="product.html">Fruits & Vegetables</a>
+                                    <a class="dropdown-item border-bottom" href="product.html">Food Grains, Oil & Masala</a>
+                                    <a class="dropdown-item border-bottom" href="product.html">Bakery, Cake & Dairy</a>
+                                    <a class="dropdown-item border-bottom" href="product.html">Beverages</a>
+                                    <a class="dropdown-item border-bottom" href="product.html">Snacks</a>
+                                    <a class="dropdown-item border-bottom" href="product.html">Beauty & Hygiene</a>
+                                    <a class="dropdown-item border-bottom" href="product.html">Cleaning & Household</a>
+                                    <a class="dropdown-item border-bottom" href="product.html">Kitchen & Pets</a>
+                                    <a class="dropdown-item border-bottom" href="product.html">Baby Care</a>
+                                    <a class="dropdown-item pb-4" href="product.html">View All</a>
+
+                                </span>
+                            </span>
+                    </div>
+                    <div class="col-md-2">
+                        <a class="btn btn-block btn-light btn-hover" href="index.html#bankOffers" ><i class="fas fa-tag" style="color: maroon"></i>&nbsp;&nbsp;OFFERS</a>
+                    </div>
+
+                    <div class="col-md-2">
+                        <a class="btn btn-block btn-light btn-hover" href="order_history.html" >&nbsp;Order History</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <!--Main Body content-->
+    <main class="mt-5">
+
+        <script>
+            var i =0;
+            var images = [];
+            var dur = 2000;
+
+            images[0] = 'images/products/dairy.jpg';
+            images[1] = 'images/products/fruits.jpg';
+            images[2] = 'images/products/organics.png';
+            images[3] = 'images/products/snacks.jpg';
+            images[4] = 'images/products/snacks2.jpg';
+
+            function carousel_fun() {
+                window.slide.src = images[i];
+                if(i<images.length-1){i++;}
+                else{i=0;}
+                setTimeout("carousel_fun()", dur);
+            }
+            window.onload = carousel_fun;
+
+        </script>
+
+        <div class="container">
+            <img name="slide" width="100%">
+        </div>
+
+        <div class="container-fluid mt-5 text-center">
+            <h3 class="border-bottom mb-4">Products</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="row mt-5">
+                        <form class="form-control-lg" action="" method="get">
+                            <input type="text" class="fontAwesome" name="searchProduct" placeholder="Search item">
+                            <button class="btn btn-info"type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+
+                        <form class="text-left ml-5">
+                            <input type="checkbox" name="checkBoxProduct" value="Vegetable">&nbsp;Vegetables<br>
+                            <input type="checkbox" name="checkBoxProduct" value="Vegetable">&nbsp;Fruits<br>
+                            <input type="checkbox" name="checkBoxProduct" value="Vegetable">&nbsp;Organics<br>
+                            <input type="checkbox" name="checkBoxProduct" value="Vegetable">&nbsp;Dairy<br>
+                            <input type="checkbox" name="checkBoxProduct" value="Vegetable">&nbsp;Snacks<br>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="col-md-9 border-left">
+                    <div class="row mt-4">
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="images/vegetables/potato.jpg" height="180px" alt="">
+                                <h4 class="card-text">Potato</h4>
+                                <div class="card-footer">
+                                    MRP Rs 16/kg
+                                    <a class="btn btn-warning" href="cart.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="images/vegetables/onion.jpg" height="180px" alt="">
+                                <h4 class="card-text">Onion</h4>
+                                <div class="card-footer">
+                                    MRP Rs 20/kg
+                                    <a class="btn btn-warning" href="cart.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="images/organics/salt.jpg" height="180px" alt="">
+                                <h4 class="card-text">Salt</h4>
+                                <div class="card-footer">
+                                    MRP Rs 24/kg
+                                    <a class="btn btn-warning" href="cart.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="images/organics/toor.jpg" height="180px" alt="">
+                                <h4 class="card-text">Pulses</h4>
+                                <div class="card-footer">
+                                    MRP Rs 80/kg
+                                    <a class="btn btn-warning" href="cart.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-4">
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="images/products/butter.jpg" height="180px" alt="">
+                                <h4 class="card-text">Butter</h4>
+                                <div class="card-footer">
+                                    MRP Rs 50<br>
+                                    <a class="btn btn-warning" href="cart.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="images/products/chips.jpg" height="180px" alt="">
+                                <h4 class="card-text">Potato Chips</h4>
+                                <div class="card-footer">
+                                    MRP Rs 35<br>
+                                    <a class="btn btn-warning" href="cart.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="images/products/cold-drinks.jpg" height="180px" alt="">
+                                <h4 class="card-text">Soft Drinks</h4>
+                                <div class="card-footer">
+                                    MRP Rs 150<br>
+                                    <a class="btn btn-warning" href="cart.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="images/products/milk.jpg" height="180px" alt="">
+                                <h4 class="card-text">Milk</h4>
+                                <div class="card-footer">
+                                    MRP Rs 45/ltr
+                                    <a class="btn btn-warning" href="cart.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-4">
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="images/products/paneer.jpg" height="180px" alt="">
+                                <h4 class="card-text">Cottage Cheese</h4>
+                                <div class="card-footer">
+                                    MRP Rs 80<br>
+                                    <a class="btn btn-warning" href="cart.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="images/products/ketchup.jpg" height="180px" alt="">
+                                <h4 class="card-text">Ketchup</h4>
+                                <div class="card-footer">
+                                    MRP Rs 120/kg
+                                    <a class="btn btn-warning" href="cart.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="images/products/tea-leaves.jpg" height="180px" alt="">
+                                <h4 class="card-text">Tea Leaves</h4>
+                                <div class="card-footer">
+                                    MRP Rs 150<br>
+                                    <a class="btn btn-warning" href="cart.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="images/products/battery.jpg" height="180px" alt="">
+                                <h4 class="card-text">Battery AA</h4>
+                                <div class="card-footer">
+                                    MRP Rs 10/pc
+                                    <a class="btn btn-warning" href="cart.html">Add to Cart</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <a class="btn btn-danger mt-5" href="product.html"> Load More...</a>
+
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!--footer content-->
+    <footer class="mt-5 mb-5">
+        <div class="container bg-light">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12 text-center mt-4">
+                    <h5 style="color: forestgreen">Big Basket</h5>
+                    <small>
+                        <a href="about.html" class="foot-link">About Us</a><br>
+                        <a href="404.html" target="_blank" class="foot-link">In News</a><br>
+                        <a href="404.html" target="_blank" class="foot-link">Privacy Policy</a><br>
+                        <a href="404.html" target="_blank" class="foot-link">Terms and Conditions</a><br>
+                        <a href="404.html" target="_blank" class="foot-link">Careers</a><br>
+                    </small>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 text-center mt-4">
+                    <h5 style="color: forestgreen">Help</h5>
+                    <small>
+                        <a href="404.html" target="_blank" class="foot-link">FAQs</a><br>
+                        <a href="contact.html" class="foot-link">Contact Us</a><br>
+                        <a href="404.html" target="_blank" class="foot-link">Vendor Contact</a><br>
+                    </small>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 text-center mt-4">
+                    <h5 style="color: forestgreen">Download Our App</h5>
+                    <a href="https://google.com" target="_blank">
+                        <img src="images/Google-App-store-icon.png" height="40px" width="120px">
+                    </a>
+                    <a href="https://apple.com" target="_blank">
+                        <img src="images/Apple-App-store-icon.png" height="40px" width="120px">
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 text-center mt-4">
+                    <h5 style="color: forestgreen">Follow Us On</h5>
+                    <a href="https://facebook.com" class="px-2"><i class="fa fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" class="px-2"><i class="fa fa-twitter"></i></a>
+                    <a href="https://instagram.com" class="px-2"><i class="fa fa-instagram"></i></a>
+                    <a href="https://linkedin.com" class="px-2"><i class="fa fa-linkedin-in"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
